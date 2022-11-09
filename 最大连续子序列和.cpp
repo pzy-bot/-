@@ -28,7 +28,7 @@ int maxsequence(int arr[], int len)
 int main() {
     printf("请输入需要输入的整数个数（不超过10也不能小于1）\n");
     int num = 10;
-    scanf_s("%d", &num);
+    scanf("%d", &num);
     if (num <= 0 || num > 10) {
         printf("输入的个数不对，退出程序。");
         return 0;
@@ -36,7 +36,7 @@ int main() {
     printf("请输入一段不超过%d个整数的序列（数据以空格为间隔，多写的数据无效）：\n",num);
     int i = 0, arr[10];
     do {
-        scanf_s("%d", &arr[i]);
+        scanf("%d", &arr[i]);
         if (i >= num) break;
         i++;
     } while (getchar() != '\n');
